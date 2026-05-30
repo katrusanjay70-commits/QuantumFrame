@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CPS — Computer Performance System</title>
+<meta name="description" content="Futuristic hardware encyclopedia and benchmark platform for GPUs, CPUs, RAM and Storage." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-logo">⌬</div>
+    <div>
+      <div class="brand-name">CPS</div>
+      <div class="brand-sub">Performance.System</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#/" data-route="/"><span>◉</span> Dashboard</a>
+    <a href="#/gpus" data-route="/gpus"><span>▲</span> GPUs</a>
+    <a href="#/cpus" data-route="/cpus"><span>■</span> CPUs</a>
+    <a href="#/ram" data-route="/ram"><span>≡</span> RAM</a>
+    <a href="#/storage" data-route="/storage"><span>◇</span> Storage</a>
+    <a href="#/compare" data-route="/compare"><span>⇋</span> Compare</a>
+    <a href="#/about" data-route="/about"><span>✦</span> About</a>
+  </nav>
+  <div class="status">
+    <div class="status-row"><span class="dot"></span> System Online</div>
+    <div class="status-row sub">DB v2.5.0 · 240+ parts</div>
+  </div>
+</aside>
+
+<header class="topbar">
+  <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+  <div class="search">
+    <span>⌕</span>
+    <input id="globalSearch" placeholder="Search hardware — RTX 4090, Ryzen 9 7950X, DDR5..." />
+  </div>
+  <div class="meta">
+    <span class="chip"><i class="led"></i> LIVE</span>
+    <span class="chip">v2.5</span>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="footer">
+  <div class="foot-grid">
+    <div>
+      <div class="brand-name big">CPS</div>
+      <p class="muted">Built for PC enthusiasts and performance lovers.</p>
+    </div>
+    <div>
+      <h4>Database</h4>
+      <a href="#/gpus">GPUs</a><a href="#/cpus">CPUs</a><a href="#/ram">RAM</a><a href="#/storage">Storage</a>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <a href="#/compare">Compare</a><a href="#/about">About</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+    <div class="socials">
+  <a href="https://www.instagram.com/daily._.deploy/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30"></a><br>
+  
+  <a href="https://github.com/katrusanjay70-commits" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="30"></a>
+  
+  <a href="https://www.linkedin.com/in/sanjay-katru-806a37404/" target="_blank">  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30"></a>
+  
+  <a href="mailto:katrusanjay70@gmail.com">    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="30">
+</a>
+</div>
+    </div>
+  </div>
+  <div class="copy">© 2026 CPS — Computer Performance System</div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
